@@ -1,0 +1,8 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "book pool backend",
+  "main": "index.js",
+  "author": "Charudutta",
+  "license": "MIT"
+}

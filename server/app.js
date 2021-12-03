@@ -3,6 +3,9 @@ require('dotenv').config()
 const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
+const bodyparser = require("body-parser");
+const cors = require('cors');
+const cookieParser = require('cookie-parser');
 
 
 mongoose.connect(process.env.DATABASE, { 
@@ -13,6 +16,9 @@ mongoose.connect(process.env.DATABASE, {
 }).catch(()=>{
   console.log("DB GOT OPPS");
 })
+
+
+app.use();
 
 app.get("/", (req, res) => {
   return res.send("Hello World!");
